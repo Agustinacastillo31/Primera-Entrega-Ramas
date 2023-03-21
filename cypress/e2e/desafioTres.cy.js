@@ -40,15 +40,13 @@ describe('desafioTres', () => {
     const homePage = new HomePage();
     homePage.clickInOnlineShop();
     productPage.clickAddtoCart(datos.producto);
-    productPage.clickGoShoppingCart();
-    shoppingCartPage.clickGotoProducts();
     productPage.clickAddtoCart(datos.producto2);
     productPage.clickGoShoppingCart();
+    cy.contains('20').should('exist');
+    cy.contains('15').should('exist');
     shoppingCartPage.clickshowTotalPrice();
     cy.get('#price').should('have.text', '35');
 
   });
 });
-
-
 

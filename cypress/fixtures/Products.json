@@ -1,4 +1,6 @@
 {
     "producto": "White Pants",
-    "producto2": "Black T-Shirt"
+    "precio": "20",
+    "producto2": "Black T-Shirt",
+    "precio2": "15"
 }
